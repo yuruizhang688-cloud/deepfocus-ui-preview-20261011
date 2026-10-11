@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":3,"namespace":"DeepFocusDesignSystem_a3f512","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"SectionLabel","sourcePath":"components/core/SectionLabel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Field","sourcePath":"components/forms/Field.jsx"},{"name":"Navbar","sourcePath":"components/navigation/Navbar.jsx"},{"name":"FeatureCard","sourcePath":"components/surfaces/FeatureCard.jsx"},{"name":"StatsPanel","sourcePath":"components/surfaces/StatsPanel.jsx"}],"sourceHashes":{"charts/deepalign-echarts-theme.js":"12983e3fda9d","components/core/Badge.jsx":"be58cf218038","components/core/Button.jsx":"09e6843dfb1c","components/core/SectionLabel.jsx":"bbe84fa56023","components/core/Tag.jsx":"ecafb7df8899","components/forms/Field.jsx":"5b73e2bceaf7","components/navigation/Navbar.jsx":"3bd83dd7eb74","components/surfaces/FeatureCard.jsx":"e5af7d8dce06","components/surfaces/StatsPanel.jsx":"6307e798a7fd","ui_kits/website/Footer.jsx":"6084c2d863a5","ui_kits/website/Home.jsx":"4f929f89c1be","ui_kits/website/Blog.jsx":"e953571b87bb","ui_kits/website/Contact.jsx":"e7f0779405cd"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":3,"namespace":"DeepFocusDesignSystem_a3f512","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"SectionLabel","sourcePath":"components/core/SectionLabel.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"Field","sourcePath":"components/forms/Field.jsx"},{"name":"Navbar","sourcePath":"components/navigation/Navbar.jsx"},{"name":"FeatureCard","sourcePath":"components/surfaces/FeatureCard.jsx"},{"name":"StatsPanel","sourcePath":"components/surfaces/StatsPanel.jsx"}],"sourceHashes":{"charts/deepalign-echarts-theme.js":"92968e9c5dd6","components/core/Badge.jsx":"be58cf218038","components/core/Button.jsx":"09e6843dfb1c","components/core/SectionLabel.jsx":"bbe84fa56023","components/core/Tag.jsx":"ecafb7df8899","components/forms/Field.jsx":"5b73e2bceaf7","components/navigation/Navbar.jsx":"3bd83dd7eb74","components/surfaces/FeatureCard.jsx":"e5af7d8dce06","components/surfaces/StatsPanel.jsx":"6307e798a7fd","ui_kits/website/Footer.jsx":"6084c2d863a5","ui_kits/website/Home.jsx":"4f929f89c1be","ui_kits/website/Blog.jsx":"e953571b87bb","ui_kits/website/Contact.jsx":"e7f0779405cd"},"inlinedExternals":[],"unexposedExports":[]} */
 (() => {
 const React = window.React;
 if (!React) throw new Error('Load React before the DeepFocus bundle');
@@ -7,17 +7,17 @@ if (!React) throw new Error('Load React before the DeepFocus bundle');
 /* DeepFocus report adaptation; source UI v1.0, not a PDF chart specification. */
 
 (function (root) {
-  var INK      = '#17151F';   
-  var INK_BODY = '#17151F';   
-  var MUTED    = '#625D6C';   
-  var OUTLINE  = '#E6E3ED';   
-  var GRID     = 'rgba(0,0,0,0.06)';   
-  var GRID_SOFT= 'rgba(0,0,0,0.028)';  
+  var INK      = '#17151F';
+  var INK_BODY = '#17151F';
+  var MUTED    = '#625D6C';
+  var OUTLINE  = '#E6E3ED';
+  var GRID     = 'rgba(0,0,0,0.06)';
+  var GRID_SOFT= 'rgba(0,0,0,0.028)';
   var PRIMARY  = '#4F39F6';
   var FONT_UI = "Space Grotesk, MiSans, sans-serif";
   var FONT_NUM = "'Geist Mono', 'MiSans', monospace";
 
-  
+
   var PALETTE = ['#4F39F6', '#625D6C', '#9B82FF', '#17151F', '#BDADFF', '#3D25CE'];
 
   var axisCommon = {
@@ -40,17 +40,17 @@ if (!React) throw new Error('Load React before the DeepFocus bundle');
       left: 0
     },
 
-    
+
     line: {
       itemStyle:   { borderWidth: 2 },
       lineStyle:   { width: 2 },
       symbol: 'circle',
       symbolSize: 7,
-      smooth: false,        
+      smooth: false,
       emphasis: { focus: 'series' }
     },
     bar: {
-      itemStyle: { borderRadius: 0, borderColor: 'transparent' },   
+      itemStyle: { borderRadius: 0, borderColor: 'transparent' },
       barMaxWidth: 44,
       emphasis: { focus: 'series' }
     },
@@ -77,7 +77,7 @@ if (!React) throw new Error('Load React before the DeepFocus bundle');
     },
     graph: { color: PALETTE },
 
-    
+
     categoryAxis: axisCommon,
     valueAxis:    Object.assign({}, axisCommon, {
       axisLine: { show: false }, axisTick: { show: false }
@@ -85,11 +85,11 @@ if (!React) throw new Error('Load React before the DeepFocus bundle');
     logAxis:      axisCommon,
     timeAxis:     axisCommon,
 
-    
+
     grid: { left: 8, right: 16, top: 32, bottom: 8, containLabel: true },
 
     legend: {
-      icon: 'rect',                 
+      icon: 'rect',
       itemWidth: 11, itemHeight: 11, itemGap: 18,
       textStyle: { color: MUTED, fontFamily: FONT_UI, fontSize: 12 },
       inactiveColor: '#cfcfcf',
@@ -116,7 +116,7 @@ if (!React) throw new Error('Load React before the DeepFocus bundle');
       }
     },
 
-    
+
     gauge: {
       axisLine:  { lineStyle: { color: [[1, GRID]], width: 12 } },
       progress:  { show: true, width: 12, itemStyle: { color: PRIMARY } },
@@ -128,7 +128,7 @@ if (!React) throw new Error('Load React before the DeepFocus bundle');
       axisLabel: { color: MUTED, fontFamily: FONT_UI }
     },
 
-    
+
     visualMap: {
       color: ['#3D25CE', '#4F39F6', '#D9D0FF'],
       textStyle: { color: MUTED, fontFamily: FONT_UI, fontSize: 12 }
