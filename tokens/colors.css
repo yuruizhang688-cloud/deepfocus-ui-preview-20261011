@@ -1,0 +1,28 @@
+/* DeepFocus UI v1.0 — palette and semantic roles. */
+:root {
+  color-scheme: light;
+  --brand-50: #f5f3ff; --brand-100: #ede9ff; --brand-200: #d9d0ff; --brand-300: #bdadff;
+  --brand-400: #9b82ff; --brand-500: #7255ff; --brand-600: #4f39f6; --brand-700: #3d25ce;
+  --primary: var(--brand-600); --primary-container: var(--brand-700); --primary-dim: var(--brand-700); --on-primary: #ffffff;
+  --brand-mark: var(--primary); --canvas: #fbfbfb; --surface-lowest: #ffffff; --surface: #f6f5f9;
+  --feature-surface: #f4f1fd; --on-surface: #17151f; --on-surface-variant: #625d6c; --theme-muted: #686370;
+  --ink-heading: var(--on-surface); --ink-blog: var(--on-surface); --ink-muted: var(--on-surface-variant);
+  --line-card: #e6e3ed; --line-nav: #efedf4; --line-blog: var(--line-card); --outline: #625d6c; --outline-variant: var(--line-card);
+  --success: #2f7d64; --warning: #a9701f; --danger: #b0443c;
+  --inverse-surface: #07090d; --inverse-primary: var(--brand-300);
+  --surface-page: var(--canvas); --surface-card: var(--surface-lowest); --surface-alt: var(--surface);
+  --text-body: var(--on-surface); --text-muted: var(--ink-muted); --text-on-accent: var(--on-primary); --accent: var(--primary); --link: var(--primary);
+  /* Compatibility aliases, mapped to the current palette. */
+  --brand-h: 247; --logo-blue: var(--brand-mark); --tertiary: var(--brand-700); --tertiary-container: var(--brand-100);
+  --surface-bright: var(--canvas); --surface-low: var(--surface); --surface-container: var(--brand-50); --surface-high: var(--brand-100);
+  --surface-highest: var(--brand-200); --surface-dim: var(--line-card); --surface-tint: var(--primary);
+  --line-grid-96: transparent; --line-grid-24: transparent;
+}
+[data-theme="deepfocus-dark"] {
+  color-scheme: dark;
+  --primary: var(--brand-300); --primary-container: var(--brand-400); --primary-dim: var(--brand-400); --on-primary: #17151f;
+  --canvas: #07090d; --surface-lowest: #1b1f25; --surface: #262c34; --feature-surface: #262c34;
+  --on-surface: #eef2f5; --on-surface-variant: #9aacb9; --theme-muted: #9aacb9;
+  --line-card: rgba(255,255,255,.16); --line-nav: rgba(255,255,255,.1); --outline: #9aacb9;
+  --success: #5ec8a4; --warning: #d9a761; --danger: #e0837b;
+}

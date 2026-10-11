@@ -1,0 +1,54 @@
+/* DeepFocus source elevation and motion. */
+:root {
+  --shadow-card: inset 0 1px 0 rgba(255,255,255,.06), 0 1px 2px rgba(6,10,13,.06), 0 8px 24px -12px rgba(6,10,13,.1);
+  --shadow-float: 0 12px 32px -16px rgba(6,10,13,.24);
+  --shadow-overlay: 0 24px 60px -28px rgba(6,10,13,.45);
+  --shadow-md: var(--shadow-card); --shadow-cta: var(--shadow-card); --shadow-dark: var(--shadow-float); --shadow-hard: var(--shadow-card);
+  --motion-fast: 240ms; --motion-base: 450ms; --motion-slow: 800ms;
+  --dur-fast: var(--motion-fast); --dur-base: var(--motion-base);
+  --ease: cubic-bezier(.2,.8,.2,1); --lift: translateY(-2px);
+}
+@supports (transition-timing-function: linear(0,1)) { :root { --ease: linear(
+    0 0%,
+    0.01966 2.5%,
+    0.06851 5%,
+    0.13466 7.5%,
+    0.20969 10%,
+    0.28778 12.5%,
+    0.365 15%,
+    0.43883 17.5%,
+    0.50774 20%,
+    0.5709 22.5%,
+    0.62799 25%,
+    0.67901 27.5%,
+    0.72421 30%,
+    0.76394 32.5%,
+    0.79863 35%,
+    0.82876 37.5%,
+    0.85481 40%,
+    0.87723 42.5%,
+    0.89646 45%,
+    0.9129 47.5%,
+    0.9269 50%,
+    0.93881 52.5%,
+    0.94891 55%,
+    0.95746 57.5%,
+    0.96467 60%,
+    0.97076 62.5%,
+    0.97588 65%,
+    0.98018 67.5%,
+    0.98379 70%,
+    0.98682 72.5%,
+    0.98935 75%,
+    0.99146 77.5%,
+    0.99323 80%,
+    0.99471 82.5%,
+    0.99594 85%,
+    0.99696 87.5%,
+    0.99781 90%,
+    0.99852 92.5%,
+    0.99911 95%,
+    0.9996 97.5%,
+    1 100%
+  ); } }
+@media (prefers-reduced-motion:reduce) { :root { --motion-fast:0ms; --motion-base:0ms; --motion-slow:0ms; --lift:none; } }

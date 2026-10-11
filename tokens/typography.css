@@ -1,0 +1,16 @@
+/* DeepFocus UI v1.0 — local font roles and source type scale. */
+:root {
+  --font-global: 'Space Grotesk', 'MiSans', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --font-display: var(--font-global); --font-body: var(--font-global); --font-label: var(--font-global);
+  --font-mono: 'Geist Mono', 'MiSans', ui-monospace, monospace;
+  --font-chakra: var(--font-display); /* legacy token, current font */
+  --type-hero: clamp(36px,4.2vw,64px); --type-h1: clamp(30px,3.25vw,42px);
+  --type-h2: clamp(28px,2.8vw,40px); --type-h3: 24px; --type-h4: 20px;
+  --type-body: 16px; --type-lead: 18px; --type-meta: 14px; --type-label: 12px;
+  --type-2xs: 11px; --type-xs: 12px; --type-sm: 14px; --type-base: 16px; --type-lg: 18px;
+  --type-xl: 20px; --type-2xl: 24px; --type-3xl: 30px; --type-4xl: 36px; --type-5xl: 42px; --type-6xl: 54px;
+  --fw-hero: 500; --fw-h1: 500; --fw-h2: 500; --fw-h3: 600; --fw-body: 400; --fw-label: 500;
+  --lh-hero: 1.22; --lh-h1: 1.2; --lh-h2: 1.32; --lh-h3: 1.2; --lh-body: 1.75;
+  --ls-hero: 0em; --ls-h1: 0em; --ls-h2: 0em; --ls-body: 0em; --ls-label: 0em;
+}
+:lang(zh-Hant) { --font-global: 'Space Grotesk', 'MiSans TC', 'PingFang TC', sans-serif; }

@@ -1,0 +1,11 @@
+/* DeepFocus layout and shape scale; grid is a design recommendation. */
+:root {
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 24px; --sp-6: 32px;
+  --sp-7: 48px; --sp-8: 64px; --sp-9: 80px; --sp-10: 96px; --sp-11: 128px;
+  --layout-maw: 1216px; --layout-outer: 32px; --navbar-height: 76px;
+  --shape-xs: 4px; --shape-sm: 8px; --shape-md: 12px; --shape-lg: 16px; --shape-xl: 28px; --shape-full: 9999px;
+  --radius: var(--shape-sm); --grid-hero: 96px; --grid-fine: 24px;
+  --section-space: clamp(80px,7vw,128px);
+}
+@media (max-width:767px) { :root { --layout-outer:16px; } }
+@media (max-width:639px) { :root { --section-space:72px; } }
